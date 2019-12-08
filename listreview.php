@@ -31,11 +31,14 @@
           </div>
           <div class="col-sm-6 col-lg-3">
             <button class="btn btn-success px-4" type="submit" style="margin-top:16px; width:80px">OK</button>
-            <button class="btn btn-primary px-4" type="button" style="margin-top:16px; width:80px">Add</button>
+            <button class="btn btn-primary px-4" type="button" data-toggle="modal" data-target="#AddReview" style="margin-top:16px; width:80px">Add</button>
           </div>
         </div>    
   </form>
 </div>
+
+<?php include "formAddReview.php" ?>
+
 
 <div class="card">
     <table class="table table-responsive-sm table-hover table-outline mb-0">

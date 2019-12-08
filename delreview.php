@@ -16,7 +16,7 @@
         $sql="DELETE FROM save_table WHERE idreview='$idreview'";
         $conn->query($sql);
         $name_hinhanh=$idreview.'.jpg';
-        $link='hinhanh/'.$name_hinhanh;
+        $link='android/hinhanh/'.$name_hinhanh;
         unlink($link);
         $sql="DELETE FROM review_table WHERE id='$idreview'";
         if($conn->query($sql)===TRUE)
