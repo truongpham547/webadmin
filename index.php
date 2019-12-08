@@ -4,6 +4,7 @@
   date_default_timezone_set('Asia/Ho_Chi_Minh');
   if(isset($_COOKIE['admin']))
   {
+    setcookie('admin', $_COOKIE['admin'], time() + 7200);
     $today=date('Y-m-d');
     $token=$_COOKIE['admin'];
     try{
@@ -128,7 +129,7 @@
               <span class="badge badge-primary"></span>
             </a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">
+            <a class="dropdown-item" href="logout.php">
               <i class="fa fa-lock"></i> Logout</a>
           </div>
         </li>

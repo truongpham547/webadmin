@@ -1,5 +1,6 @@
 <?php
   include "android/login.php";
+  if(isset($_COOKIE['admin'])) header("Location:index.php");
   if(isset($result))
   {
     if($result['success']==1&&$result['admin']==1)
